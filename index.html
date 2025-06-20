@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemify - Playful Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="tablet-frame">
+        <div class="camera-dot"></div>
+        <div id="app-container">
+
+            <!-- ===== Home Screen ===== -->
+            <div id="home-screen" class="screen active">
+                <header class="app-header">
+                    <h1>★ Chemify ★</h1>
+                    <p>Making the learning of elements playful and fun</p>
+                </header>
+                <nav class="main-nav">
+                    <button data-screen="train-screen">🎓 Train Mode</button>
+                    <button data-screen="test-screen">🧪 Test Mode</button>
+                    <button data-screen="grid-screen">▦ Character Grid</button>
+                    <button data-screen="lab-screen">🔬 Reaction Lab</button>
+                </nav>
+                <div class="sparkle">✨</div>
+            </div>
+
+            <!-- ===== Train Mode Screen ===== -->
+<div id="train-screen" class="screen hidden">
+  <header class="app-header">
+    <h2>★ Train Mode ★</h2>
+    <p>Explore & Learn!</p>
+  </header>
+
+  <div class="train-main-layout">
+    <div class="train-left-panel">
+      <div id="mini-periodic-table" class="periodic-grid">
+        <!-- Row 1 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 1;" data-symbol="H" title="Hydrogen">H</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 1;" data-symbol="He" title="Helium">He</div>
+
+        <!-- Row 2 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 2;" data-symbol="Li" title="Lithium">Li</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 2;" data-symbol="Be" title="Beryllium">Be</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 2;" data-symbol="B" title="Boron">B</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 2;" data-symbol="C" title="Carbon">C</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 2;" data-symbol="N" title="Nitrogen">N</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 2;" data-symbol="O" title="Oxygen">O</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 2;" data-symbol="F" title="Fluorine">F</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 2;" data-symbol="Ne" title="Neon">Ne</div>
+
+        <!-- Period 3 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 3;" data-symbol="Na" title="Sodium">Na</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 3;" data-symbol="Mg" title="Magnesium">Mg</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 3;" data-symbol="Al" title="Aluminium">Al</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 3;" data-symbol="Si" title="Silicon">Si</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 3;" data-symbol="P" title="Phosphorus">P</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 3;" data-symbol="S" title="Sulfur">S</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 3;" data-symbol="Cl" title="Chlorine">Cl</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 3;" data-symbol="Ar" title="Argon">Ar</div>
+
+        <!-- Period 4 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 4;" data-symbol="K" title="Potassium">K</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 4;" data-symbol="Ca" title="Calcium">Ca</div>
+        <div class="element-button" style="grid-column: 3; grid-row: 4;" data-symbol="Sc" title="Scandium">Sc</div>
+        <div class="element-button" style="grid-column: 4; grid-row: 4;" data-symbol="Ti" title="Titanium">Ti</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 4;" data-symbol="V" title="Vanadium">V</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 4;" data-symbol="Cr" title="Chromium">Cr</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 4;" data-symbol="Mn" title="Manganese">Mn</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 4;" data-symbol="Fe" title="Iron">Fe</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 4;" data-symbol="Co" title="Cobalt">Co</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 4;" data-symbol="Ni" title="Nickel">Ni</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 4;" data-symbol="Cu" title="Copper">Cu</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 4;" data-symbol="Zn" title="Zinc">Zn</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 4;" data-symbol="Ga" title="Gallium">Ga</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 4;" data-symbol="Ge" title="Germanium">Ge</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 4;" data-symbol="As" title="Arsenic">As</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 4;" data-symbol="Se" title="Selenium">Se</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 4;" data-symbol="Br" title="Bromine">Br</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 4;" data-symbol="Kr" title="Krypton">Kr</div>
+
+        <!-- Period 5 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 5;" data-symbol="Rb" title="Rubidium">Rb</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 5;" data-symbol="Sr" title="Strontium">Sr</div>
+        <div class="element-button" style="grid-column: 3; grid-row: 5;" data-symbol="Y" title="Yttrium">Y</div>
+        <div class="element-button" style="grid-column: 4; grid-row: 5;" data-symbol="Zr" title="Zirconium">Zr</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 5;" data-symbol="Nb" title="Niobium">Nb</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 5;" data-symbol="Mo" title="Molybdenum">Mo</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 5;" data-symbol="Tc" title="Technetium">Tc</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 5;" data-symbol="Ru" title="Ruthenium">Ru</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 5;" data-symbol="Rh" title="Rhodium">Rh</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 5;" data-symbol="Pd" title="Palladium">Pd</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 5;" data-symbol="Ag" title="Silver">Ag</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 5;" data-symbol="Cd" title="Cadmium">Cd</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 5;" data-symbol="In" title="Indium">In</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 5;" data-symbol="Sn" title="Tin">Sn</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 5;" data-symbol="Sb" title="Antimony">Sb</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 5;" data-symbol="Te" title="Tellurium">Te</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 5;" data-symbol="I" title="Iodine">I</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 5;" data-symbol="Xe" title="Xenon">Xe</div>
+
+        <!-- Period 6 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 6;" data-symbol="Cs" title="Cesium">Cs</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 6;" data-symbol="Ba" title="Barium">Ba</div>
+        <!-- Lanthanides placeholder (to be placed below in row 8) -->
+        <div class="element-button" style="grid-column: 3; grid-row: 6;" data-symbol="Hf" title="Hafnium">Hf</div>
+        <div class="element-button" style="grid-column: 4; grid-row: 6;" data-symbol="Ta" title="Tantalum">Ta</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 6;" data-symbol="W" title="Tungsten">W</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 6;" data-symbol="Re" title="Rhenium">Re</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 6;" data-symbol="Os" title="Osmium">Os</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 6;" data-symbol="Ir" title="Iridium">Ir</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 6;" data-symbol="Pt" title="Platinum">Pt</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 6;" data-symbol="Au" title="Gold">Au</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 6;" data-symbol="Hg" title="Mercury">Hg</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 6;" data-symbol="Tl" title="Thallium">Tl</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 6;" data-symbol="Pb" title="Lead">Pb</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 6;" data-symbol="Bi" title="Bismuth">Bi</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 6;" data-symbol="Po" title="Polonium">Po</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 6;" data-symbol="At" title="Astatine">At</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 6;" data-symbol="Rn" title="Radon">Rn</div>
+
+        <!-- Period 7 -->
+        <div class="element-button" style="grid-column: 1; grid-row: 7;" data-symbol="Fr" title="Francium">Fr</div>
+        <div class="element-button" style="grid-column: 2; grid-row: 7;" data-symbol="Ra" title="Radium">Ra</div>
+        <!-- Actinides placeholder (to be placed below in row 9) -->
+        <div class="element-button" style="grid-column: 3; grid-row: 7;" data-symbol="Rf" title="Rutherfordium">Rf</div>
+        <div class="element-button" style="grid-column: 4; grid-row: 7;" data-symbol="Db" title="Dubnium">Db</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 7;" data-symbol="Sg" title="Seaborgium">Sg</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 7;" data-symbol="Bh" title="Bohrium">Bh</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 7;" data-symbol="Hs" title="Hassium">Hs</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 7;" data-symbol="Mt" title="Meitnerium">Mt</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 7;" data-symbol="Ds" title="Darmstadtium">Ds</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 7;" data-symbol="Rg" title="Roentgenium">Rg</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 7;" data-symbol="Cn" title="Copernicium">Cn</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 7;" data-symbol="Nh" title="Nihonium">Nh</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 7;" data-symbol="Fl" title="Flerovium">Fl</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 7;" data-symbol="Mc" title="Moscovium">Mc</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 7;" data-symbol="Lv" title="Livermorium">Lv</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 7;" data-symbol="Ts" title="Tennessine">Ts</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 7;" data-symbol="Og" title="Oganesson">Og</div>
+
+        <!-- Lanthanides - row 8 -->
+        <div class="element-button" style="grid-column: 4; grid-row: 8;" data-symbol="La" title="Lanthanum">La</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 8;" data-symbol="Ce" title="Cerium">Ce</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 8;" data-symbol="Pr" title="Praseodymium">Pr</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 8;" data-symbol="Nd" title="Neodymium">Nd</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 8;" data-symbol="Pm" title="Promethium">Pm</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 8;" data-symbol="Sm" title="Samarium">Sm</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 8;" data-symbol="Eu" title="Europium">Eu</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 8;" data-symbol="Gd" title="Gadolinium">Gd</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 8;" data-symbol="Tb" title="Terbium">Tb</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 8;" data-symbol="Dy" title="Dysprosium">Dy</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 8;" data-symbol="Ho" title="Holmium">Ho</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 8;" data-symbol="Er" title="Erbium">Er</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 8;" data-symbol="Tm" title="Thulium">Tm</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 8;" data-symbol="Yb" title="Ytterbium">Yb</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 8;" data-symbol="Lu" title="Lutetium">Lu</div>
+
+        <!-- Actinides - row 9 -->
+        <div class="element-button" style="grid-column: 4; grid-row: 9;" data-symbol="Ac" title="Actinium">Ac</div>
+        <div class="element-button" style="grid-column: 5; grid-row: 9;" data-symbol="Th" title="Thorium">Th</div>
+        <div class="element-button" style="grid-column: 6; grid-row: 9;" data-symbol="Pa" title="Protactinium">Pa</div>
+        <div class="element-button" style="grid-column: 7; grid-row: 9;" data-symbol="U" title="Uranium">U</div>
+        <div class="element-button" style="grid-column: 8; grid-row: 9;" data-symbol="Np" title="Neptunium">Np</div>
+        <div class="element-button" style="grid-column: 9; grid-row: 9;" data-symbol="Pu" title="Plutonium">Pu</div>
+        <div class="element-button" style="grid-column: 10; grid-row: 9;" data-symbol="Am" title="Americium">Am</div>
+        <div class="element-button" style="grid-column: 11; grid-row: 9;" data-symbol="Cm" title="Curium">Cm</div>
+        <div class="element-button" style="grid-column: 12; grid-row: 9;" data-symbol="Bk" title="Berkelium">Bk</div>
+        <div class="element-button" style="grid-column: 13; grid-row: 9;" data-symbol="Cf" title="Californium">Cf</div>
+        <div class="element-button" style="grid-column: 14; grid-row: 9;" data-symbol="Es" title="Einsteinium">Es</div>
+        <div class="element-button" style="grid-column: 15; grid-row: 9;" data-symbol="Fm" title="Fermium">Fm</div>
+        <div class="element-button" style="grid-column: 16; grid-row: 9;" data-symbol="Md" title="Mendelevium">Md</div>
+        <div class="element-button" style="grid-column: 17; grid-row: 9;" data-symbol="No" title="Nobelium">No</div>
+        <div class="element-button" style="grid-column: 18; grid-row: 9;" data-symbol="Lr" title="Lawrencium">Lr</div>
+
+      </div>
+    </div>
+
+
+  <div id="element-details-panel" class="hidden">
+    <div id="fun-fact-card">
+      <h4>Fun Fact!</h4>
+      <img id="fun-fact-meme" src="" alt="Fun fact meme">
+      <p id="fun-fact-text"></p>
+    </div>
+    <div id="real-world-uses">
+      <h4>Where in the World?</h4>
+      <div id="uses-grid"></div>
+    </div>
+  </div>
+
+  <button class="back-button">← Back to Menu</button>
+</div>
+
+
+
+            <!-- ===== Test Mode Screen ===== -->
+            <div id="test-screen" class="screen hidden">
+                <header class="app-header"><h2>★ Test Mode ★</h2><p>Match & Master!</p></header>
+                <div class="test-area">
+                    <p class="instruction">Listen to the sound and choose the matching element.</p>
+                    <button id="test-sound-button">🔊 Play Sound for New Question</button>
+                    <div id="test-choices"></div>
+                    <button id="submit-answer-button">Submit Answer</button>
+                    <p id="test-feedback" class="feedback-message"></p>
+                </div>
+                <button class="back-button">← Back to Menu</button>
+            </div>
+
+            <!-- ===== Character Grid Screen ===== -->
+            <div id="grid-screen" class="screen hidden">
+                <header class="app-header"><h2>★ Character Grid ★</h2><p>Meet the whole family!</p></header>
+                <div id="family-filters"></div>
+                <div id="full-character-grid"></div>
+                <button class="back-button">← Back to Menu</button>
+            </div>
+
+            <!-- ===== Reaction Lab Screen ===== -->
+            <div id="lab-screen" class="screen hidden">
+                <header class="app-header"><h2>★ Reaction Lab ★</h2><p>Combine elements to see what happens!</p></header>
+                <div class="lab-area">
+                    <div class="reaction-slots">
+                        <div id="slot-1" class="slot"><p>?</p></div>
+                        <div class="plus-sign">+</div>
+                        <div id="slot-2" class="slot"><p>?</p></div>
+                    </div>
+                    <button id="combine-button">Combine!</button>
+                    <button id="reset-lab-button">Reset</button>
+                    <div id="reaction-result" class="feedback-message"></div>
+                </div>
+                <h4>Available Elements</h4>
+                <div id="lab-element-palette"></div>
+                <button class="back-button">← Back to Menu</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1101,10 +1101,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   document.getElementById("test-sound-button").addEventListener("click", () => {
     if (currentTestQuestion.correctAnswer) {
-      new Audio(currentTestQuestion.correctAnswer.sound).play();
-      loadNewTestQuestion(); // also serves as "next question"
+      const audio = new Audio(currentTestQuestion.correctAnswer.sound);
+      audio.play().catch((err) => console.error("Audio play failed:", err));
+    } else {
+      // First time click or reload
+      loadNewTestQuestion();
     }
   });
+
   document
     .getElementById("submit-answer-button")
     .addEventListener("click", () => {
@@ -1114,6 +1118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feedbackEl.className = "feedback-message info";
         return;
       }
+
       if (selectedTestAnswer === currentTestQuestion.correctAnswer.symbol) {
         feedbackEl.textContent = "Correct! Well done! 🎉";
         feedbackEl.className = "feedback-message success";
@@ -1121,6 +1126,9 @@ document.addEventListener("DOMContentLoaded", () => {
         feedbackEl.textContent = `Not quite. The correct answer was ${currentTestQuestion.correctAnswer.symbol}. Try the next one!`;
         feedbackEl.className = "feedback-message error";
       }
+
+      // Delay before loading next question
+      setTimeout(loadNewTestQuestion, 1500);
     });
 
   // --- Character Grid ---

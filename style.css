@@ -755,6 +755,15 @@ button {
   margin-top: 1rem;
 }
 
+.meme-inline {
+  display: block;
+
+  margin: auto;
+  margin-top: 12px;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
 /* Character Grid & Lab (Shared Styles) */
 #family-filters,
 #lab-element-palette {

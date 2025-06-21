@@ -1109,6 +1109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  let wrongAnswerCount = 0;
+
   document
     .getElementById("submit-answer-button")
     .addEventListener("click", () => {
@@ -1122,13 +1124,31 @@ document.addEventListener("DOMContentLoaded", () => {
       if (selectedTestAnswer === currentTestQuestion.correctAnswer.symbol) {
         feedbackEl.textContent = "Correct! Well done! 🎉";
         feedbackEl.className = "feedback-message success";
+
+        wrongAnswerCount = 0;
+
+        feedbackEl.innerHTML +=
+          '<img src="./assets/memes/walter-thumbs-up.png" class="meme-inline">';
       } else {
+        wrongAnswerCount++;
+
         feedbackEl.textContent = `Not quite. The correct answer was ${currentTestQuestion.correctAnswer.symbol}. Try the next one!`;
         feedbackEl.className = "feedback-message error";
+
+        feedbackEl.innerHTML +=
+          '<img src="./assets/memes/gustave-angry.png" class="meme-inline">';
+
+        if (wrongAnswerCount >= 3) {
+          feedbackEl.innerHTML = `
+          <img src="./assets/memes/jesse-did-you-even-go-to-a-class.png" class="meme-inline">
+          <p class="roast-quote">“You clearly have zero understanding of chemistry.” – Walter</p>
+        `;
+          wrongAnswerCount = 0; // Optional: reset after roasting
+        }
       }
 
       // Delay before loading next question
-      setTimeout(loadNewTestQuestion, 1500);
+      setTimeout(loadNewTestQuestion, 30000);
     });
 
   // --- Character Grid ---
@@ -1218,6 +1238,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if ((s1 === "Na" && s2 === "Cl") || (s1 === "Cl" && s2 === "Na")) {
       resultEl.textContent = "Success! You made table salt (NaCl)! 🧂";
       resultEl.className = "feedback-message success";
+    } else if (s1 === "H" && s2 === "O") {
+      resultEl.textContent = "Boom! You made water (H₂O)! 💧";
+      resultEl.className = "feedback-message success";
+      resultEl.innerHTML +=
+        '<img src="./assets/memes/jessie-science.png" class="meme-inline">';
     } else if (
       slot1Element.family === "Noble Gas" ||
       slot2Element.family === "Noble Gas"
@@ -1226,7 +1251,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "No reaction. Noble Gases are too cool to react! 😎";
       resultEl.className = "feedback-message info";
     } else {
-      resultEl.textContent = "No reaction between these two. Try another pair!";
+      resultEl.textContent =
+        "No reaction... just like Jesse in chemistry class.";
+      resultEl.innerHTML +=
+        '<img src="./assets/memes/jesse-confused.png" class="meme-inline">';
       resultEl.className = "feedback-message error";
     }
   });

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       family: "Nonmetal",
       sound: "/assets/sounds/row1/hydrogen.wav",
       funFact: {
-        text: "I am the most common element in the universe! I power the sun.",
+        text: "I'm the fuel of the stars. Without me, the Sun would just be a sad cold rock.",
         meme: "./assets/memes/1.png",
       },
       realWorldUses: [],
@@ -22,12 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
       family: "Noble Gas",
       sound: "./assets/sounds/row1/helium.wav",
       funFact: {
-        text: "I am so light, I make balloons float and your voice squeaky!",
+        text: "I make your voice sound like a chipmunk. You're welcome, comedy.",
         meme: "",
       },
       realWorldUses: [],
     },
-
     {
       symbol: "Li",
       name: "Lithium",
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       family: "Alkali Metal",
       sound: "./assets/sounds/row2/lithium.wav",
       funFact: {
-        text: "I am a light metal that stores a lot of energy, perfect for batteries.",
+        text: "Without me, your phone dies. Literally. I'm the MVP of your battery.",
         meme: "",
       },
       realWorldUses: [],
@@ -49,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       family: "Alkaline Earth Metal",
       sound: "./assets/sounds/row2/beryllium.mp3",
       funFact: {
-        text: "I am a lightweight metal used in aerospace materials.",
+        text: "I’m light, strong, and expensive – basically the Beyoncé of metals.",
         meme: "",
       },
       realWorldUses: [],
@@ -62,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
       family: "Metalloid",
       sound: "./assets/sounds/row2/boron.mp3",
       funFact: {
-        text: "I am used to make strong borosilicate glass.",
+        text: "I'm not boring! I make glass that won't shatter when your coffee gets mad hot.",
         meme: "./assets",
       },
       realWorldUses: [],
@@ -74,7 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Nonmetal",
       sound: "./assets/sounds/row2/carbon.mp3",
-      funFact: { text: "I form the basis of all life on Earth.", meme: "" },
+      funFact: {
+        text: "I’m in diamonds, pencils, and YOU. Yeah, you’re basically carbon with opinions.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -84,7 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🌬️",
       family: "Nonmetal",
       sound: "./assets/sounds/row2/nitrogen.mp3",
-      funFact: { text: "I make up 78% of the Earth’s atmosphere.", meme: "" },
+      funFact: {
+        text: "I make up 78% of the air – basically the background character of the atmosphere.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -94,7 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🌬️",
       family: "Nonmetal",
       sound: "./assets/sounds/row2/oxygen.mp3",
-      funFact: { text: "You need me to breathe!", meme: "" },
+      funFact: {
+        text: "You breathe me every day and still take me for granted. Typical.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -104,7 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🦷",
       family: "Halogen",
       sound: "./assets/sounds/row2/fluorine.mp3",
-      funFact: { text: "Used in toothpaste to prevent cavities.", meme: "" },
+      funFact: {
+        text: "I keep your teeth sparkly. But touch me raw and I’ll ruin your day.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -114,10 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💡",
       family: "Noble Gas",
       sound: "./assets/sounds/row2/neon.mp3",
-      funFact: { text: "Glows bright in neon signs.", meme: "" },
+      funFact: {
+        text: "I light up the night like a Vegas sign. Party element, reporting in.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "Na",
       name: "Sodium",
@@ -125,7 +138,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧂",
       family: "Alkali Metal",
       sound: "./assets/sounds/row3/sodium.mp3",
-      funFact: { text: "I react explosively with water!", meme: "" },
+      funFact: {
+        text: "Drop me in water and BOOM – I don't do chill.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -135,7 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔥",
       family: "Alkaline Earth Metal",
       sound: "./assets/sounds/row3/magnesium.mp3",
-      funFact: { text: "I am used in fireworks and flares.", meme: "" },
+      funFact: {
+        text: "I’m the firework guy. I make things go ✨BOOM✨ in the sky.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -158,7 +177,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💻",
       family: "Metalloid",
       sound: "./assets/sounds/row3/silicon.mp3",
-      funFact: { text: "I am the basis of computer chips.", meme: "" },
+      funFact: {
+        text: "Your phone? Me. Your computer? Me. I’m the real tech genius here.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -168,7 +190,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🕯️",
       family: "Nonmetal",
       sound: "./assets/sounds/row3/phosphorus.mp3",
-      funFact: { text: "Used in fertilizers and matches.", meme: "" },
+      funFact: {
+        text: "Used in fertilizers and matches.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -178,7 +203,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🟡",
       family: "Nonmetal",
       sound: "./assets/sounds/row3/sulfur.mp3",
-      funFact: { text: "I smell like rotten eggs.", meme: "" },
+      funFact: {
+        text: "I smell like rotten eggs. I ruin elevators and science labs alike.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -188,7 +216,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧼",
       family: "Halogen",
       sound: "./assets/sounds/row3/chlorine.mp3",
-      funFact: { text: "Used to disinfect swimming pools.", meme: "" },
+      funFact: {
+        text: "I'm that sting in your eyes at the pool. You're welcome for the clean water.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -204,7 +235,6 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       realWorldUses: [],
     },
-
     {
       symbol: "K",
       name: "Potassium",
@@ -212,7 +242,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🍌",
       family: "Alkali Metal",
       sound: "./assets/sounds/row4/potassium.mp3",
-      funFact: { text: "Important for nerve function in your body.", meme: "" },
+      funFact: {
+        text: "Important for nerve function in your body.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -222,7 +255,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🦴",
       family: "Alkaline Earth Metal",
       sound: "./assets/sounds/row4/calcium.mp3",
-      funFact: { text: "I build strong bones and teeth.", meme: "" },
+      funFact: {
+        text: "I build strong bones and teeth.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -232,7 +268,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔩",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/scandium.mp3",
-      funFact: { text: "Used in aerospace components.", meme: "" },
+      funFact: {
+        text: "Used in aerospace components.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -242,7 +281,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚙️",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/titanium.mp3",
-      funFact: { text: "Strong and lightweight metal.", meme: "" },
+      funFact: {
+        text: "Strong and lightweight metal.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -252,7 +294,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔧",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/vanadium.mp3",
-      funFact: { text: "Used in strong steel alloys.", meme: "" },
+      funFact: {
+        text: "Used in strong steel alloys.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -262,7 +307,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🛠️",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/chromium.mp3",
-      funFact: { text: "Gives metal a shiny finish (chrome).", meme: "" },
+      funFact: {
+        text: "Gives metal a shiny finish (chrome).",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -272,7 +320,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚙️",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/manganese.mp3",
-      funFact: { text: "Important for steel production.", meme: "" },
+      funFact: {
+        text: "Important for steel production.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -282,7 +333,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⛓️",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/iron.mp3",
-      funFact: { text: "Essential for blood oxygen transport.", meme: "" },
+      funFact: {
+        text: "You love me for strong blood. Magnets? Yeah, I do that too. I'm multitasking.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -292,7 +346,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔵",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/cobalt.mp3",
-      funFact: { text: "Used to color glass and ceramics.", meme: "" },
+      funFact: {
+        text: "Used to color glass and ceramics.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -302,7 +359,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🪙",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/nickel.mp3",
-      funFact: { text: "Used in coins and stainless steel.", meme: "" },
+      funFact: {
+        text: "Used in coins and stainless steel.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -312,7 +372,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🟠",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/copper.mp3",
-      funFact: { text: "Great conductor of electricity.", meme: "" },
+      funFact: {
+        text: "Great conductor of electricity.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -322,10 +385,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🛡️",
       family: "Transition Metal",
       sound: "./assets/sounds/row4/zinc.mp3",
-      funFact: { text: "Used to prevent rust on iron.", meme: "" },
+      funFact: {
+        text: "Used to prevent rust on iron.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "Ga",
       name: "Gallium",
@@ -333,7 +398,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "✨",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row4/gallium.mp3",
-      funFact: { text: "Melts in your hand.", meme: "" },
+      funFact: {
+        text: "Melts in your hand.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -343,7 +411,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Metalloid",
       sound: "./assets/sounds/row4/germanium.mp3",
-      funFact: { text: "Used in fiber optics.", meme: "" },
+      funFact: {
+        text: "Used in fiber optics.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -353,7 +424,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☠️",
       family: "Metalloid",
       sound: "./assets/sounds/row4/arsenic.mp3",
-      funFact: { text: "Poisonous element.", meme: "" },
+      funFact: {
+        text: "Poisonous element.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -363,7 +437,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧬",
       family: "Nonmetal",
       sound: "./assets/sounds/row4/selenium.mp3",
-      funFact: { text: "Used in photocopiers and glass.", meme: "" },
+      funFact: {
+        text: "Used in photocopiers and glass.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -373,7 +450,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧪",
       family: "Halogen",
       sound: "./assets/sounds/row4/bromine.mp3",
-      funFact: { text: "Only nonmetal liquid at room temp.", meme: "" },
+      funFact: {
+        text: "Only nonmetal liquid at room temp.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -383,10 +463,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧊",
       family: "Noble Gas",
       sound: "./assets/sounds/row4/krypton.mp3",
-      funFact: { text: "Used in some types of lights.", meme: "" },
+      funFact: {
+        text: "Used in some types of lights.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "Rb",
       name: "Rubidium",
@@ -394,7 +476,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔥",
       family: "Alkali Metal",
       sound: "./assets/sounds/row5/rubidium.mp3",
-      funFact: { text: "Used in atomic clocks.", meme: "" },
+      funFact: {
+        text: "Used in atomic clocks.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -404,7 +489,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🎆",
       family: "Alkaline Earth Metal",
       sound: "./assets/sounds/row5/strontium.mp3",
-      funFact: { text: "Used in fireworks.", meme: "" },
+      funFact: {
+        text: "Used in fireworks.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -414,7 +502,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔮",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/yttrium.mp3",
-      funFact: { text: "Used in LEDs and phosphors.", meme: "" },
+      funFact: {
+        text: "Used in LEDs and phosphors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -424,7 +515,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/zirconium.mp3",
-      funFact: { text: "Used in nuclear reactors.", meme: "" },
+      funFact: {
+        text: "Used in nuclear reactors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -434,7 +528,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔧",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/niobium.mp3",
-      funFact: { text: "Used in superconducting materials.", meme: "" },
+      funFact: {
+        text: "Used in superconducting materials.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -444,7 +541,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚙️",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/molybdenum.mp3",
-      funFact: { text: "Used to strengthen steel.", meme: "" },
+      funFact: {
+        text: "Used to strengthen steel.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -454,7 +554,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚛️",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/technetium.mp3",
-      funFact: { text: "First artificially produced element.", meme: "" },
+      funFact: {
+        text: "First artificially produced element.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -464,7 +567,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💍",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/ruthenium.mp3",
-      funFact: { text: "Used in electrical contacts.", meme: "" },
+      funFact: {
+        text: "Used in electrical contacts.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -474,7 +580,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/rhodium.mp3",
-      funFact: { text: "Used in catalytic converters.", meme: "" },
+      funFact: {
+        text: "Used in catalytic converters.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -484,7 +593,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💍",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/palladium.mp3",
-      funFact: { text: "Used in jewelry and electronics.", meme: "" },
+      funFact: {
+        text: "Used in jewelry and electronics.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -494,7 +606,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🥈",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/silver.mp3",
-      funFact: { text: "Excellent conductor and used in jewelry.", meme: "" },
+      funFact: {
+        text: "Excellent conductor and used in jewelry.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -504,10 +619,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Transition Metal",
       sound: "./assets/sounds/row5/cadmium.mp3",
-      funFact: { text: "Toxic and used in batteries.", meme: "" },
+      funFact: {
+        text: "Toxic and used in batteries.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "In",
       name: "Indium",
@@ -515,7 +632,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔧",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row5/indium.mp3",
-      funFact: { text: "Used in touchscreens.", meme: "" },
+      funFact: {
+        text: "Used in touchscreens.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -525,7 +645,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🥫",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row5/tin.mp3",
-      funFact: { text: "Used in solder and cans.", meme: "" },
+      funFact: {
+        text: "Used in solder and cans.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -535,7 +658,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🛡️",
       family: "Metalloid",
       sound: "./assets/sounds/row5/antimony.mp3",
-      funFact: { text: "Used in flame retardants.", meme: "" },
+      funFact: {
+        text: "Used in flame retardants.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -545,7 +671,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚡",
       family: "Metalloid",
       sound: "./assets/sounds/row5/tellurium.mp3",
-      funFact: { text: "Used in solar panels.", meme: "" },
+      funFact: {
+        text: "Used in solar panels.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -555,7 +684,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚕️",
       family: "Halogen",
       sound: "./assets/sounds/row5/iodine.mp3",
-      funFact: { text: "Essential nutrient and disinfectant.", meme: "" },
+      funFact: {
+        text: "Essential nutrient and disinfectant.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -565,11 +697,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💡",
       family: "Noble Gas",
       sound: "./assets/sounds/row5/xenon.mp3",
-      funFact: { text: "Used in flash lamps and ion propulsion.", meme: "" },
+      funFact: {
+        text: "Used in flash lamps and ion propulsion.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
-    // Lanthanides
     {
       symbol: "La",
       name: "Lanthanum",
@@ -577,7 +710,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔆",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/lanthanum.mp3",
-      funFact: { text: "Used in camera lenses.", meme: "" },
+      funFact: {
+        text: "Used in camera lenses.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -587,7 +723,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔮",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/cerium.mp3",
-      funFact: { text: "Used in catalytic converters.", meme: "" },
+      funFact: {
+        text: "Used in catalytic converters.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -597,7 +736,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/praseodymium.mp3",
-      funFact: { text: "Used in magnets.", meme: "" },
+      funFact: {
+        text: "Used in magnets.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -607,7 +749,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧲",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/neodymium.mp3",
-      funFact: { text: "Used in powerful magnets.", meme: "" },
+      funFact: {
+        text: "Used in powerful magnets.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -617,7 +762,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/promethium.mp3",
-      funFact: { text: "Radioactive and rare.", meme: "" },
+      funFact: {
+        text: "Radioactive and rare.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -627,7 +775,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧲",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/samarium.mp3",
-      funFact: { text: "Used in magnets and cancer treatment.", meme: "" },
+      funFact: {
+        text: "Used in magnets and cancer treatment.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -637,7 +788,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "✨",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/europium.mp3",
-      funFact: { text: "Used in TV screens.", meme: "" },
+      funFact: {
+        text: "Used in TV screens.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -647,7 +801,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧲",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/gadolinium.mp3",
-      funFact: { text: "Used in MRI contrast agents.", meme: "" },
+      funFact: {
+        text: "Used in MRI contrast agents.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -657,7 +814,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔆",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/terbium.mp3",
-      funFact: { text: "Used in green phosphors.", meme: "" },
+      funFact: {
+        text: "Used in green phosphors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -667,7 +827,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🧲",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/dysprosium.mp3",
-      funFact: { text: "Used in lasers.", meme: "" },
+      funFact: {
+        text: "Used in lasers.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -677,7 +840,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "✨",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/holmium.mp3",
-      funFact: { text: "Used in nuclear reactors.", meme: "" },
+      funFact: {
+        text: "Used in nuclear reactors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -687,7 +853,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💎",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/erbium.mp3",
-      funFact: { text: "Used in fiber optics.", meme: "" },
+      funFact: {
+        text: "Used in fiber optics.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -697,7 +866,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "✨",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/thulium.mp3",
-      funFact: { text: "Used in portable X-ray machines.", meme: "" },
+      funFact: {
+        text: "Used in portable X-ray machines.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -707,7 +879,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "💡",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/ytterbium.mp3",
-      funFact: { text: "Used in lasers.", meme: "" },
+      funFact: {
+        text: "Used in lasers.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -717,11 +892,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🔆",
       family: "Lanthanide",
       sound: "./assets/sounds/row8/lutetium.mp3",
-      funFact: { text: "Used in PET scan detectors.", meme: "" },
+      funFact: {
+        text: "Used in PET scan detectors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
-    // Actinides
     {
       symbol: "Ac",
       name: "Actinium",
@@ -729,7 +905,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/actinium.mp3",
-      funFact: { text: "Radioactive, used in radiation therapy.", meme: "" },
+      funFact: {
+        text: "Radioactive, used in radiation therapy.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -739,7 +918,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/thorium.mp3",
-      funFact: { text: "Potential nuclear fuel.", meme: "" },
+      funFact: {
+        text: "Potential nuclear fuel.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -749,7 +931,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/protactinium.mp3",
-      funFact: { text: "Highly radioactive.", meme: "" },
+      funFact: {
+        text: "Highly radioactive.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -759,7 +944,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/uranium.mp3",
-      funFact: { text: "Used in nuclear reactors and weapons.", meme: "" },
+      funFact: {
+        text: "Used in nuclear reactors and weapons.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -769,7 +957,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/neptunium.mp3",
-      funFact: { text: "Radioactive and synthetic.", meme: "" },
+      funFact: {
+        text: "Radioactive and synthetic.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -779,7 +970,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/plutonium.mp3",
-      funFact: { text: "Used in nuclear weapons and reactors.", meme: "" },
+      funFact: {
+        text: "Used in nuclear weapons and reactors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -789,7 +983,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/americium.mp3",
-      funFact: { text: "Used in smoke detectors.", meme: "" },
+      funFact: {
+        text: "Used in smoke detectors.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -799,7 +996,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/curium.mp3",
-      funFact: { text: "Highly radioactive.", meme: "" },
+      funFact: {
+        text: "Highly radioactive.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -809,7 +1009,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/berkelium.mp3",
-      funFact: { text: "Synthetic and radioactive.", meme: "" },
+      funFact: {
+        text: "Synthetic and radioactive.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -819,7 +1022,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/californium.mp3",
-      funFact: { text: "Used in neutron sources.", meme: "" },
+      funFact: {
+        text: "Used in neutron sources.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -829,7 +1035,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/einsteinium.mp3",
-      funFact: { text: "Synthetic element.", meme: "" },
+      funFact: {
+        text: "Synthetic element.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -839,7 +1048,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/fermium.mp3",
-      funFact: { text: "Synthetic element.", meme: "" },
+      funFact: {
+        text: "Synthetic element.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -849,7 +1061,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/mendelevium.mp3",
-      funFact: { text: "Named after Mendeleev.", meme: "" },
+      funFact: {
+        text: "Named after Mendeleev.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -859,7 +1074,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/nobelium.mp3",
-      funFact: { text: "Named after Alfred Nobel.", meme: "" },
+      funFact: {
+        text: "Named after Alfred Nobel.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -869,10 +1087,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Actinide",
       sound: "./assets/sounds/row9/lawrencium.mp3",
-      funFact: { text: "Named after Ernest Lawrence.", meme: "" },
+      funFact: {
+        text: "Named after Ernest Lawrence.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "Tl",
       name: "Thallium",
@@ -880,7 +1100,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☠️",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row6/thallium.mp3",
-      funFact: { text: "Highly toxic, used in electronics.", meme: "" },
+      funFact: {
+        text: "Highly toxic, used in electronics.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -890,7 +1113,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚖️",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row6/lead.mp3",
-      funFact: { text: "Used historically in pipes and paints.", meme: "" },
+      funFact: {
+        text: "Used historically in pipes and paints.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -900,10 +1126,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "🟪",
       family: "Post-Transition Metal",
       sound: "./assets/sounds/row9/bismuth.mp3",
-      funFact: { text: "Used in cosmetics and pharmaceuticals.", meme: "" },
+      funFact: {
+        text: "Used in cosmetics and pharmaceuticals.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "At",
       name: "Astatine",
@@ -911,10 +1139,12 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "⚛️",
       family: "Halogen",
       sound: "./assets/sounds/row6/astatine.mp3",
-      funFact: { text: "Rare and radioactive halogen.", meme: "" },
+      funFact: {
+        text: "Rare and radioactive halogen.",
+        meme: "",
+      },
       realWorldUses: [],
     },
-
     {
       symbol: "Rn",
       name: "Radon",
@@ -922,7 +1152,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Noble Gas",
       sound: "./assets/sounds/row6/radon.mp3",
-      funFact: { text: "Radioactive gas from uranium decay.", meme: "" },
+      funFact: {
+        text: "Radioactive gas from uranium decay.",
+        meme: "",
+      },
       realWorldUses: [],
     },
     {
@@ -932,7 +1165,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emoji: "☢️",
       family: "Noble Gas",
       sound: "./assets/sounds/row7/oganesson.mp3",
-      funFact: { text: "Heaviest noble gas, synthetic.", meme: "" },
+      funFact: {
+        text: "Heaviest noble gas, synthetic.",
+        meme: "",
+      },
       realWorldUses: [],
     },
   ];

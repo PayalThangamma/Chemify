@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       characterName: "Energetic Hydrogen",
       emoji: "💨",
       family: "Nonmetal",
-      sound: "/assets/sounds/row1/hydrogen.mp3",
+      sound: "/assets/sounds/row1/hydrogen.wav",
       funFact: {
         text: "I am the most common element in the universe! I power the sun.",
         meme: "./assets/memes/1.png",
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       characterName: "Happy Helium",
       emoji: "🎈",
       family: "Noble Gas",
-      sound: "./assets/sounds/row1/helium.mp3",
+      sound: "./assets/sounds/row1/helium.wav",
       funFact: {
         text: "I am so light, I make balloons float and your voice squeaky!",
         meme: "",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       characterName: "Charged-up Lithium",
       emoji: "🔋",
       family: "Alkali Metal",
-      sound: "./assets/sounds/row2/lithium.mp3",
+      sound: "./assets/sounds/row2/lithium.wav",
       funFact: {
         text: "I am a light metal that stores a lot of energy, perfect for batteries.",
         meme: "",
@@ -1166,6 +1166,107 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- Reaction Lab ---
+
+  const reactionRules = [
+  {
+    elements: ["Na", "Cl"],
+    result: "Success! You made table salt (NaCl)! 🧂",
+    type: "success"
+  },
+  {
+    families: ["Alkali Metal", "Halogen"],
+    result: "You made a salt compound! 🧂",
+    type: "success"
+  },
+  {
+  families: ["Alkaline Earth Metal", "Halogen"],
+  result: "You made a halide salt! 🧂",
+  type: "success"
+  },
+  {
+    families: ["Alkali Metal", "Water"],
+    result: "Boom! Alkali metals explode in water! 💥",
+    type: "success"
+  },
+  {
+  families: ["Alkali Metal", "Water"],
+  result: "Boom! Alkali metals explode in water! 💥",
+  type: "success"
+  },
+  {
+    elements: ["H", "O"],
+    result: "You made water! H₂O 💧",
+    type: "success"
+  },
+  {
+  families: ["Nonmetal", "Water"],
+  result: "You made an acidic solution! ☠️",
+  type: "success"
+  },
+  {
+  families: ["Metal", "Water"],
+  result: "Some metals form hydroxides in water. 🧪",
+  type: "info"
+  },
+  {
+    elements: ["C", "O"],
+    result: "You made carbon dioxide! CO₂ 🌫️",
+    type: "success"
+  },
+  {
+    elements: ["Fe", "O"],
+    result: "Rust formed! Fe₂O₃ 🧲",
+    type: "success"
+  },
+  {
+    families: ["Metal", "Oxygen"],
+    result: "You made a metal oxide! ⚙️",
+    type: "success"
+  },
+
+  // Hydrogen reactions
+  {
+    families: ["Halogen", "Hydrogen"],
+    result: "You made a hydrogen halide (acid)! 🧪",
+    type: "success"
+  },
+  {
+    families: ["Metal", "Hydrogen"],
+    result: "You formed a metal hydride. ⚛️",
+    type: "success"
+  },
+
+  // Noble gases
+  {
+    families: ["Noble Gas", "*"],
+    result: "No reaction. Noble Gases are too cool to react! 😎",
+    type: "info"
+  },
+  {
+    families: ["*", "Noble Gas"],
+    result: "No reaction. Noble Gases are too cool to react! 😎",
+    type: "info"
+  },
+
+  // Transition metals
+  {
+    families: ["Transition Metal", "Halogen"],
+    result: "You made a colorful metal halide! 🎨",
+    type: "success"
+  },
+  {
+    families: ["Transition Metal", "Oxygen"],
+    result: "You made a transition metal oxide. 🧪",
+    type: "success"
+  },
+  {
+    families: ["*", "*"],
+    result: "No reaction between these two. Try another pair!",
+    type: "error"
+  }
+];
+
+
   function initReactionLab() {
     const palette = document.getElementById("lab-element-palette");
     palette.innerHTML = "";
@@ -1215,21 +1316,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const s1 = slot1Element.symbol;
     const s2 = slot2Element.symbol;
-    if ((s1 === "Na" && s2 === "Cl") || (s1 === "Cl" && s2 === "Na")) {
-      resultEl.textContent = "Success! You made table salt (NaCl)! 🧂";
-      resultEl.className = "feedback-message success";
-    } else if (
-      slot1Element.family === "Noble Gas" ||
-      slot2Element.family === "Noble Gas"
+    const f1 = slot1Element.family;
+    const f2 = slot2Element.family;
+
+    let matchedRule = null;
+    for (const rule of reactionRules) {
+    if (
+      rule.elements &&
+      ((rule.elements.includes(s1) && rule.elements.includes(s2)))
     ) {
-      resultEl.textContent =
-        "No reaction. Noble Gases are too cool to react! 😎";
-      resultEl.className = "feedback-message info";
-    } else {
-      resultEl.textContent = "No reaction between these two. Try another pair!";
-      resultEl.className = "feedback-message error";
+      matchedRule = rule;
+      break;
     }
-  });
+
+    if (rule.families) {
+      const [rf1, rf2] = rule.families;
+      if (
+        (rf1 === f1 || rf1 === "*" || rf1 === f2) &&
+        (rf2 === f2 || rf2 === "*" || rf2 === f1)
+      ) {
+        matchedRule = rule;
+        break;
+      }
+    }
+  }
+
+  if (matchedRule) {
+    resultEl.textContent = matchedRule.result;
+    resultEl.className = "feedback-message " + matchedRule.type;
+  } else {
+    resultEl.textContent = "No reaction between these two. Try another pair!";
+    resultEl.className = "feedback-message error";
+  }
+});
 
   // Initialize App
   showScreen("home-screen");

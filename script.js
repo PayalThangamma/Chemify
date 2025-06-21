@@ -1228,7 +1228,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Active Actinium",
   emoji: "⚛️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/actinium.mp3",
+  sound: "./assets/sounds/row9/actinium.mp3",
   funFact: "Radioactive and rare.",
   realWorldUses: [
     "Research",
@@ -1241,7 +1241,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Thriving Thorium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/thorium.mp3",
+  sound: "./assets/sounds/row9/thorium.mp3",
   funFact: "Potential nuclear fuel.",
   realWorldUses: [
     "Nuclear reactors",
@@ -1254,7 +1254,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Powerful Protactinium",
   emoji: "⚛️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/protactinium.mp3",
+  sound: "./assets/sounds/row9/protactinium.mp3",
   funFact: "Rare and radioactive.",
   realWorldUses: [
     "Research only"
@@ -1266,7 +1266,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Unyielding Uranium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/uranium.mp3",
+  sound: "./assets/sounds/row9/uranium.mp3",
   funFact: "Used as nuclear fuel.",
   realWorldUses: [
     "Nuclear power",
@@ -1280,7 +1280,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Noble Neptunium",
   emoji: "⚛️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/neptunium.mp3",
+  sound: "./assets/sounds/row9/neptunium.mp3",
   funFact: "Radioactive and rare.",
   realWorldUses: [
     "Research",
@@ -1293,7 +1293,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Powerful Plutonium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/plutonium.mp3",
+  sound: "./assets/sounds/row9/plutonium.mp3",
   funFact: "Used in nuclear weapons.",
   realWorldUses: [
     "Nuclear weapons",
@@ -1307,7 +1307,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Atomic Americium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/americium.mp3",
+  sound: "./assets/sounds/row9/americium.mp3",
   funFact: "Used in smoke detectors.",
   realWorldUses: [
     "Smoke detectors",
@@ -1320,7 +1320,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Curious Curium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/curium.mp3",
+  sound: "./assets/sounds/row9/curium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research",
@@ -1333,7 +1333,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Brilliant Berkelium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/berkelium.mp3",
+  sound: "./assets/sounds/row9/berkelium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research only"
@@ -1345,7 +1345,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Clever Californium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/californium.mp3",
+  sound: "./assets/sounds/row9/californium.mp3",
   funFact: "Used in neutron sources.",
   realWorldUses: [
     "Neutron sources",
@@ -1359,7 +1359,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Energetic Einsteinium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/einsteinium.mp3",
+  sound: "./assets/sounds/row9/einsteinium.mp3",
   funFact: "Synthetic and highly radioactive.",
   realWorldUses: [
     "Research only"
@@ -1371,7 +1371,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Fascinating Fermium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/fermium.mp3",
+  sound: "./assets/sounds/row9/fermium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research only"
@@ -1383,7 +1383,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Mighty Mendelevium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/mendelevium.mp3",
+  sound: "./assets/sounds/row9/mendelevium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research only"
@@ -1395,7 +1395,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Noble Nobelium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/nobelium.mp3",
+  sound: "./assets/sounds/row9/nobelium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research only"
@@ -1407,7 +1407,7 @@ document.addEventListener("DOMContentLoaded", () => {
   characterName: "Luminous Lawrencium",
   emoji: "☢️",
   family: "Actinide",
-  sound: "./assets/sounds/row7/lawrencium.mp3",
+  sound: "./assets/sounds/row9/lawrencium.mp3",
   funFact: "Synthetic and radioactive.",
   realWorldUses: [
     "Research only"

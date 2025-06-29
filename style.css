@@ -886,7 +886,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -898,11 +898,11 @@ button {
   bottom: 3px;
   background-color: white;
   border-radius: 50%;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 input:checked + .slider:before {

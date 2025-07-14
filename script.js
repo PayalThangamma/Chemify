@@ -1717,11 +1717,6 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "success",
     },
     {
-      families: ["Alkali Metal", "Water"],
-      result: "Boom! Alkali metals explode in water! 💥",
-      type: "success",
-    },
-    {
       elements: ["H", "O"],
       result: "You made water! H₂O 💧",
       type: "success",
@@ -1834,6 +1829,155 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("reset-lab-button")
     .addEventListener("click", resetLab);
 
+  
+  const reactionHints = {
+  "Na+Cl": [
+    "Hmm... salty vibes ahead!",
+    "What happens when you mix a soft metal with a deadly gas?",
+    "Try mixing these two—you might get something tasty!",
+  ],
+  "H+O": [
+    "Thirsty? Think water.",
+    "Explosive beginnings can have refreshing endings.",
+    "Hydrogen and oxygen go together like clouds and rain.",
+  ],
+  "Fe+O": [
+    "Old bridges know this combo well.",
+    "Iron meets air... What do you get?",
+    "Think rust, think reddish brown.",
+  ],
+  "C+O": [
+    "Something invisible but everywhere.",
+    "Breathing this too much isn’t great...",
+    "Carbon and Oxygen – think climate!",
+  ],
+  "Alkali Metal+Water": [
+    "Expect some drama here!",
+    "Kaboom! This might be a loud reaction.",
+    "Don't try this at home!",
+  ],
+  "Halogen+Hydrogen": [
+    "You’re cooking up an acid here!",
+    "Smells a bit like chemistry class...",
+    "Hydrogen halides can be strong acids!",
+  ],
+  "Metal+Oxygen": [
+    "You’re making a solid bond here!",
+    "This one's all about oxidation.",
+    "Metal oxides are basic in nature!",
+  ],
+  "*": [
+    "Try mixing different groups—look for trends!",
+    "Explore! Chemistry is about experimentation!",
+    "Think about periodic table families.",
+    "Some combos react better than others...",
+  ],
+};
+
+// 🎯 FUNCTION TO SHOW HINT
+function showReactionHint(slot1Element, slot2Element) {
+  const hintEl = document.getElementById("reaction-hint");
+  const s1 = slot1Element.symbol;
+  const s2 = slot2Element.symbol;
+  const f1 = slot1Element.family;
+  const f2 = slot2Element.family;
+
+  let hintKey = `${s1}+${s2}`;
+  let hints = reactionHints[hintKey];
+
+  if (!hints) {
+    // Check reverse order
+    hintKey = `${s2}+${s1}`;
+    hints = reactionHints[hintKey];
+  }
+
+  if (!hints) {
+    // Check family-based key
+    const famKey1 = `${f1}+${f2}`;
+    const famKey2 = `${f2}+${f1}`;
+    hints = reactionHints[famKey1] || reactionHints[famKey2];
+  }
+
+  if (!hints) {
+    // Fallback hints
+    hints = reactionHints["*"];
+  }
+
+  // Pick random hint
+  const hint = hints[Math.floor(Math.random() * hints.length)];
+  hintEl.textContent = `💡 Hint: ${hint}`;
+  hintEl.className = "reaction-hint";
+}
+
+// 🎯 Modified combine button to show hint
+document.getElementById("combine-button").addEventListener("click", () => {
+  const resultEl = document.getElementById("reaction-result");
+  if (!slot1Element || !slot2Element) {
+    resultEl.textContent = "Please select two elements!";
+    resultEl.className = "feedback-message info";
+    return;
+  }
+
+  const s1 = slot1Element.symbol;
+  const s2 = slot2Element.symbol;
+  const f1 = slot1Element.family;
+  const f2 = slot2Element.family;
+
+  let matchedRule = null;
+  for (const rule of reactionRules) {
+    if (
+      rule.elements &&
+      rule.elements.includes(s1) &&
+      rule.elements.includes(s2)
+    ) {
+      matchedRule = rule;
+      break;
+    }
+
+    if (rule.families) {
+      const [rf1, rf2] = rule.families;
+      if (
+        (rf1 === f1 || rf1 === "*" || rf1 === f2) &&
+        (rf2 === f2 || rf2 === "*" || rf2 === f1)
+      ) {
+        matchedRule = rule;
+        break;
+      }
+    }
+  }
+
+  if (matchedRule) {
+    resultEl.textContent = matchedRule.result;
+    resultEl.className = "feedback-message " + matchedRule.type;
+  } else {
+    resultEl.textContent = "No reaction between these two. Try another pair!";
+    resultEl.className = "feedback-message error";
+  }
+
+  // 🎯 Show hint after reaction attempt
+  showReactionHint(slot1Element, slot2Element);
+});
+document.getElementById("show-hint-button").addEventListener("click", () => {
+  // Get all possible hints from reactionHints object (flattened array)
+  const allHints = [];
+
+  // Collect all hints arrays from reactionHints
+  for (const key in reactionHints) {
+    allHints.push(...reactionHints[key]);
+  }
+
+  // Pick a random hint from allHints
+  const randomHint = allHints[Math.floor(Math.random() * allHints.length)];
+
+  // Show the hint in the existing hint element
+  const hintEl = document.getElementById("reaction-hint");
+  hintEl.textContent = `💡 Hint: ${randomHint}`;
+  hintEl.className = "reaction-hint";
+});
+
+
+
+/*
   document.getElementById("combine-button").addEventListener("click", () => {
     const resultEl = document.getElementById("reaction-result");
     if (!slot1Element || !slot2Element) {
@@ -1889,7 +2033,8 @@ document.addEventListener("DOMContentLoaded", () => {
         '<img src="./assets/memes/jesse-confused.png" class="meme-inline">';
     }
   });
-
+*/
   // Initialize App
   showScreen("home-screen");
 });
+

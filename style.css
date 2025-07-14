@@ -842,6 +842,23 @@ button {
   background-color: #95a5a6;
 }
 
+#show-hint-button {
+  background-color: #95a5a6;  /* same as reset button */
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#show-hint-button:hover {
+  background-color: #7f8c8d; /* slightly darker on hover */
+}
+
+
 /* Feedback Messages */
 .feedback-message {
   font-size: 1.2rem;
@@ -907,4 +924,22 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+#reaction-hint {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #f3f4f6;
+  border-left: 4px solid #4f46e5;
+  font-size: 0.9em;
+  color: #333;
+  border-radius: 4px;
+  font-style: italic;
+  max-width: 600px;
+}
+.reaction-hint {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #888;
+  text-align: center;
 }

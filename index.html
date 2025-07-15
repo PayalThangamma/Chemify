@@ -1081,8 +1081,9 @@
             </div>
             <button id="combine-button">Combine!</button>
             <button id="reset-lab-button">Reset</button>
-            <button id="show-hint-button" title="Hint about possible reactions">💡</button>
-
+            <button id="show-hint-button" title="Hint about possible reactions">
+              💡
+            </button>
 
             <div id="reaction-result" class="feedback-message"></div>
             <div id="reaction-hint" class="reaction-hint"></div>
@@ -1090,6 +1091,14 @@
           <h4>Available Elements</h4>
           <div id="lab-element-palette"></div>
         </div>
+      </div>
+    </div>
+
+    <div id="hints-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close-button">&times;</span>
+        <h3>💡 All Possible Reaction Hints</h3>
+        <ul id="hints-list"></ul>
       </div>
     </div>
 

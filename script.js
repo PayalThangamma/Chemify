@@ -1829,171 +1829,182 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("reset-lab-button")
     .addEventListener("click", resetLab);
 
-  
   const reactionHints = {
-  "Na+Cl": [
-    "Table salt! 🧂 It's made by combining reactive sodium and toxic chlorine.",
-    "This everyday seasoning is the result of an explosive metal and a deadly gas!",
-    "Na + Cl = NaCl — the most famous ionic compound!",
-  ],
-  "H+O": [
-    "This combo creates H₂O — the water you drink daily! 💧",
-    "Two gases combine to form the most essential liquid on Earth.",
-    "Hydrogen + Oxygen = Water. From steam to oceans!",
-  ],
-  "Fe+O": [
-    "Iron reacts with oxygen to form rust — reddish-brown and flaky! 🔩➡️🧡",
-    "Ever seen an old gate turn orange? That’s iron oxide!",
-    "Rusting is slow oxidation of iron — chemistry in everyday life!",
-  ],
-  "C+O": [
-    "Carbon + Oxygen gives you CO₂ — the gas we exhale! 😮‍💨",
-    "This reaction is key to combustion and respiration!",
-    "From car exhaust to plant food — CO₂ is everywhere!",
-  ],
-  "Alkali Metal+Water": [
-    "This reaction is dangerously reactive — sodium in water goes boom! 💥",
-    "Alkali metals fizz, spark, and even explode in water!",
-    "Highly exothermic! Hydrogen gas is released and may ignite.",
-  ],
-  "Halogen+Hydrogen": [
-    "These form hydrogen halides — the building blocks of strong acids!",
-    "Add water to HCl and you get hydrochloric acid!",
-    "Classic reaction for learning about polar covalent bonding!",
-  ],
-  "Metal+Oxygen": [
-    "Metal oxides form here — like MgO or Al₂O₃. Basic and useful!",
-    "This is how many ceramics and anti-rust coatings are made.",
-    "It’s all about oxidation — metal gains oxygen!",
-  ],
-  "Halogen+Alkali Metal": [
-    "The perfect ionic pair — like NaCl, KBr, and more!",
-    "Alkali metals give electrons, halogens take them — true chemistry love!",
-    "Forming stable, white crystalline salts — just like table salt!",
-  ],
-  "Noble Gas+*": [
-    "Tough luck! Noble gases barely react. They’re called noble for a reason!",
-    "Inert and unbothered — they like staying single! 😎",
-    "Try this only under extreme lab conditions (like Xe + F₂).",
-  ],
-  "*": [
-  "Sodium and Chlorine make something you eat every day... 🧂",
-  "Hydrogen and Oxygen together can quench your thirst! 💧",
-  "Iron and Oxygen? Your bike chain knows what happens... 🧲",
-  "Carbon plus Oxygen? Think pollution and respiration 🌫️",
-  "Alkali metals love to party with water—sometimes too much! 💥",
-  "Chlorine and Hydrogen? That combo’s kinda acidic... 🧪",
-  "Try combining something explosive with something wet! 💥💧",
-  "What happens when metal meets oxygen? ⚙️ Think rust or oxides.",
-  "Ever wondered how table salt is made? Think of a soft metal and a poisonous gas!",
-  "A noble gas might be too cool to react, but try it anyway 😎",
-],
-};
+    "Na+Cl": [
+      "Table salt! 🧂 It's made by combining reactive sodium and toxic chlorine.",
+      "This everyday seasoning is the result of an explosive metal and a deadly gas!",
+      "Na + Cl = NaCl — the most famous ionic compound!",
+    ],
+    "H+O": [
+      "This combo creates H₂O — the water you drink daily! 💧",
+      "Two gases combine to form the most essential liquid on Earth.",
+      "Hydrogen + Oxygen = Water. From steam to oceans!",
+    ],
+    "Fe+O": [
+      "Iron reacts with oxygen to form rust — reddish-brown and flaky! 🔩➡️🧡",
+      "Ever seen an old gate turn orange? That’s iron oxide!",
+      "Rusting is slow oxidation of iron — chemistry in everyday life!",
+    ],
+    "C+O": [
+      "Carbon + Oxygen gives you CO₂ — the gas we exhale! 😮‍💨",
+      "This reaction is key to combustion and respiration!",
+      "From car exhaust to plant food — CO₂ is everywhere!",
+    ],
+    "Alkali Metal+Water": [
+      "This reaction is dangerously reactive — sodium in water goes boom! 💥",
+      "Alkali metals fizz, spark, and even explode in water!",
+      "Highly exothermic! Hydrogen gas is released and may ignite.",
+    ],
+    "Halogen+Hydrogen": [
+      "These form hydrogen halides — the building blocks of strong acids!",
+      "Add water to HCl and you get hydrochloric acid!",
+      "Classic reaction for learning about polar covalent bonding!",
+    ],
+    "Metal+Oxygen": [
+      "Metal oxides form here — like MgO or Al₂O₃. Basic and useful!",
+      "This is how many ceramics and anti-rust coatings are made.",
+      "It’s all about oxidation — metal gains oxygen!",
+    ],
+    "Halogen+Alkali Metal": [
+      "The perfect ionic pair — like NaCl, KBr, and more!",
+      "Alkali metals give electrons, halogens take them — true chemistry love!",
+      "Forming stable, white crystalline salts — just like table salt!",
+    ],
+    "Noble Gas+*": [
+      "Tough luck! Noble gases barely react. They’re called noble for a reason!",
+      "Inert and unbothered — they like staying single! 😎",
+      "Try this only under extreme lab conditions (like Xe + F₂).",
+    ],
+    "*": [
+      "Sodium and Chlorine make something you eat every day... 🧂",
+      "Hydrogen and Oxygen together can quench your thirst! 💧",
+      "Iron and Oxygen? Your bike chain knows what happens... 🧲",
+      "Carbon plus Oxygen? Think pollution and respiration 🌫️",
+      "Alkali metals love to party with water—sometimes too much! 💥",
+      "Chlorine and Hydrogen? That combo’s kinda acidic... 🧪",
+      "Try combining something explosive with something wet! 💥💧",
+      "What happens when metal meets oxygen? ⚙️ Think rust or oxides.",
+      "Ever wondered how table salt is made? Think of a soft metal and a poisonous gas!",
+      "A noble gas might be too cool to react, but try it anyway 😎",
+    ],
+  };
 
-// 🎯 FUNCTION TO SHOW HINT
-function showReactionHint(slot1Element, slot2Element) {
-  const hintEl = document.getElementById("reaction-hint");
-  const s1 = slot1Element.symbol;
-  const s2 = slot2Element.symbol;
-  const f1 = slot1Element.family;
-  const f2 = slot2Element.family;
+  // 🎯 FUNCTION TO SHOW HINT
+  function showReactionHint(slot1Element, slot2Element) {
+    const hintEl = document.getElementById("reaction-hint");
+    const s1 = slot1Element.symbol;
+    const s2 = slot2Element.symbol;
+    const f1 = slot1Element.family;
+    const f2 = slot2Element.family;
 
-  let hintKey = `${s1}+${s2}`;
-  let hints = reactionHints[hintKey];
+    let hintKey = `${s1}+${s2}`;
+    let hints = reactionHints[hintKey];
 
-  if (!hints) {
-    // Check reverse order
-    hintKey = `${s2}+${s1}`;
-    hints = reactionHints[hintKey];
-  }
-
-  if (!hints) {
-    // Check family-based key
-    const famKey1 = `${f1}+${f2}`;
-    const famKey2 = `${f2}+${f1}`;
-    hints = reactionHints[famKey1] || reactionHints[famKey2];
-  }
-
-  if (!hints) {
-    // Fallback hints
-    hints = reactionHints["*"];
-  }
-
-  // Pick random hint
-  const hint = hints[Math.floor(Math.random() * hints.length)];
-  hintEl.textContent = `💡 Hint: ${hint}`;
-  hintEl.className = "reaction-hint";
-}
-
-// 🎯 Modified combine button to show hint
-document.getElementById("combine-button").addEventListener("click", () => {
-  const resultEl = document.getElementById("reaction-result");
-  if (!slot1Element || !slot2Element) {
-    resultEl.textContent = "Please select two elements!";
-    resultEl.className = "feedback-message info";
-    return;
-  }
-
-  const s1 = slot1Element.symbol;
-  const s2 = slot2Element.symbol;
-  const f1 = slot1Element.family;
-  const f2 = slot2Element.family;
-
-  let matchedRule = null;
-  for (const rule of reactionRules) {
-    if (
-      rule.elements &&
-      rule.elements.includes(s1) &&
-      rule.elements.includes(s2)
-    ) {
-      matchedRule = rule;
-      break;
+    if (!hints) {
+      // Check reverse order
+      hintKey = `${s2}+${s1}`;
+      hints = reactionHints[hintKey];
     }
 
-    if (rule.families) {
-      const [rf1, rf2] = rule.families;
+    if (!hints) {
+      // Check family-based key
+      const famKey1 = `${f1}+${f2}`;
+      const famKey2 = `${f2}+${f1}`;
+      hints = reactionHints[famKey1] || reactionHints[famKey2];
+    }
+
+    if (!hints) {
+      // Fallback hints
+      hints = reactionHints["*"];
+    }
+
+    // Pick random hint
+    const hint = hints[Math.floor(Math.random() * hints.length)];
+    hintEl.textContent = `💡 Hint: ${hint}`;
+    hintEl.className = "reaction-hint";
+  }
+
+  // 🎯 Modified combine button to show hint
+  document.getElementById("combine-button").addEventListener("click", () => {
+    const resultEl = document.getElementById("reaction-result");
+    if (!slot1Element || !slot2Element) {
+      resultEl.textContent = "Please select two elements!";
+      resultEl.className = "feedback-message info";
+      return;
+    }
+
+    const s1 = slot1Element.symbol;
+    const s2 = slot2Element.symbol;
+    const f1 = slot1Element.family;
+    const f2 = slot2Element.family;
+
+    let matchedRule = null;
+    for (const rule of reactionRules) {
       if (
-        (rf1 === f1 || rf1 === "*" || rf1 === f2) &&
-        (rf2 === f2 || rf2 === "*" || rf2 === f1)
+        rule.elements &&
+        rule.elements.includes(s1) &&
+        rule.elements.includes(s2)
       ) {
         matchedRule = rule;
         break;
       }
+
+      if (rule.families) {
+        const [rf1, rf2] = rule.families;
+        if (
+          (rf1 === f1 || rf1 === "*" || rf1 === f2) &&
+          (rf2 === f2 || rf2 === "*" || rf2 === f1)
+        ) {
+          matchedRule = rule;
+          break;
+        }
+      }
     }
-  }
 
-  if (matchedRule) {
-    resultEl.textContent = matchedRule.result;
-    resultEl.className = "feedback-message " + matchedRule.type;
-  } else {
-    resultEl.textContent = "No reaction between these two. Try another pair!";
-    resultEl.className = "feedback-message error";
-  }
+    if (matchedRule) {
+      resultEl.textContent = matchedRule.result;
+      resultEl.className = "feedback-message " + matchedRule.type;
+    } else {
+      resultEl.textContent = "No reaction between these two. Try another pair!";
+      resultEl.className = "feedback-message error";
+    }
 
-  // 🎯 Show hint after reaction attempt
-  showReactionHint(slot1Element, slot2Element);
-});
-document.getElementById("show-hint-button").addEventListener("click", () => {
-  // Get all possible hints from reactionHints object (flattened array)
-  const allHints = [];
+    // 🎯 Show hint after reaction attempt
+    showReactionHint(slot1Element, slot2Element);
+  });
 
-  // Collect all hints arrays from reactionHints
-  for (const key in reactionHints) {
-    allHints.push(...reactionHints[key]);
-  }
+  document.getElementById("show-hint-button").addEventListener("click", () => {
+    const modal = document.getElementById("hints-modal");
+    const list = document.getElementById("hints-list");
 
-  // Pick a random hint from allHints
-  const randomHint = allHints[Math.floor(Math.random() * allHints.length)];
+    list.innerHTML = "";
 
-  // Show the hint in the existing hint element
-  const hintEl = document.getElementById("reaction-hint");
-  hintEl.textContent = `💡 Hint: ${randomHint}`;
-  hintEl.className = "reaction-hint";
-});
+    const allHints = new Set();
+    for (const key in reactionHints) {
+      reactionHints[key].forEach((hint) => allHints.add(hint));
+    }
 
+    Array.from(allHints).forEach((hint) => {
+      const li = document.createElement("li");
+      li.textContent = hint;
+      list.appendChild(li);
+    });
 
+    modal.classList.remove("hidden");
+  });
 
-/*
+  document.getElementById("close-modal").addEventListener("click", () => {
+    document.getElementById("hints-modal").classList.add("hidden");
+  });
+
+  window.addEventListener("click", (e) => {
+    const modal = document.getElementById("hints-modal");
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+
+  /*
   document.getElementById("combine-button").addEventListener("click", () => {
     const resultEl = document.getElementById("reaction-result");
     if (!slot1Element || !slot2Element) {
@@ -2053,4 +2064,3 @@ document.getElementById("show-hint-button").addEventListener("click", () => {
   // Initialize App
   showScreen("home-screen");
 });
-

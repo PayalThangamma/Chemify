@@ -843,7 +843,7 @@ button {
 }
 
 #show-hint-button {
-  background-color: #95a5a6;  /* same as reset button */
+  background-color: #95a5a6; /* same as reset button */
   color: var(--white);
   padding: 10px 20px;
   border-radius: 20px;
@@ -857,7 +857,6 @@ button {
 #show-hint-button:hover {
   background-color: #7f8c8d; /* slightly darker on hover */
 }
-
 
 /* Feedback Messages */
 .feedback-message {
@@ -926,18 +925,61 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 #show-hint-button {
-  background-color: #3498db;   /* Info blue */
+  background-color: #3498db; /* Info blue */
   color: white;
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
   padding: 10px 14px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
   transition: background-color 0.3s ease;
 }
 
 #show-hint-button:hover {
   background-color: #2980b9;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  color: #333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.modal ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal ul li {
+  margin-bottom: 8px;
 }

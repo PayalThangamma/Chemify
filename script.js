@@ -1478,6 +1478,10 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   document.getElementById("toggle-music").addEventListener("change", (e) => {
     useMusicInsteadOfSound = e.target.checked;
+    const label = document.getElementById("mode-label");
+    label.textContent = e.target.checked
+      ? "Intermediate Mode"
+      : "Beginner Mode";
   });
 
   // --- Train Mode ---
